@@ -11,12 +11,17 @@
     </h:head>
     <h:body>
         
+        <div id="contact">
+            <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </div>
+        
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.xhtml">Cards That Never Were</a>
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.xhtml">Home</a></li>
                     <li><a href="business.xhtml">Business</a></li>
                     <li><a href="store.xhtml">Store</a></li>
@@ -25,10 +30,6 @@
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                         </a>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -74,11 +75,12 @@
         </div>
         
         <!--<header></header>-->
+
         
         <div class="content">
             <div class="row sec-one">
 	    	<div class="col-sm-12 home-info">
-                    <h1>welcome</h1>
+                    <h1>Welcome</h1>
                     <hr/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -100,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="img/template-card.png" alt="Chania"/>
+                    <img class="img-responsive img-thumbnail" src="img/barry-larkin.jpg" alt="Barry Larkin"/>
                 </div>
                 <div class="col-sm-4">
                     <div>
@@ -116,42 +118,211 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="parallax"></div>
 
-            <div class="row sec-one">
+            <div class="row sec-two">
 	    	<div class="col-sm-12 home-info">
-                    <h1>nsectetur adipi</h1>
+                    <h1>Featured Cards</h1>
                     <hr/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    
+                    <div id="carousel-example" class="carousel slide hidden-xs carousel-no-blue" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product Example</h5>
+                                                        <h5 class="price-text-color">
+                                                            $249.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Next Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $149.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Grouped Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $249.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $149.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                            <!-- Controls -->
+                            <div class="controls pull-right hidden-xs">
+                                <a class="left btn btn-success" 
+                                   href="#carousel-example" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span></a>
+                                
+                                <a class="right btn btn-success" 
+                                    href="#carousel-example" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
 	    	</div>
             </div>
-	</div>
-        <footer>
-            <div id="footer-nav">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3> Want to work for us </h3>
-            		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-info">Info</button>
-                    </div>
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-2">
-                    <h4> LINKS </h4>
-			<ul id="footer-links">
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-			</ul>
-                    </div>
-                    <div class="col-sm-3">
-			<h4> CONTACT </h4>
-                    </div>
-		</div>
+            
+            <div class="row sec-one">
+	    	<div class="col-md-6 home-info">
+                    <h1>Want to Contact Us?</h1>
+                    <hr/>
+                    
+                    <p>
+                       Wondering how these cards are made? Do you want to us to 
+                       create custom card for you? Email us and we will do whatever 
+                       we can to satisfy your questions!
+                    </p>
+                    
+                    <button type="button" class="btn btn-block btn-primary">
+                        <span class="glyphicon glyphicon-envelope"></span> 
+                        CONTACT US
+                    </button>
+	    	</div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-thumbnail" src="img/contact-computer-temp.jpg"/>
+                </div>
             </div>
-            <hr/>
-            <p>Copyright © 2016 Niantic, Inc. All Rights Reserved.</p>
+            
+	</div>
+        
+        <footer>
+            <p>Copyright © 2017 Cards That Never Were, All Rights Reserved.</p>
 	</footer>
         
     </h:body>
