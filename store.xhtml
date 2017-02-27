@@ -4,6 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>Cards That Never Were</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -11,122 +12,250 @@
     </h:head>
     <h:body>
         
+        <div id="contact">
+            <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </div>
+        
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.xhtml">Cards That Never Were</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                      </button>
+                    <a class="navbar-brand" href="index.xhtml">
+                        <img class="img-responsive logo" src="img/logo_1.png"/>
+                    </a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.xhtml">Home</a></li>
-                    <li><a href="business.xhtml">Business</a></li>
-                    <li class="active"><a href="store.xhtml">Store</a></li>
-                    <li><a href="blog.xhtml">Blog</a></li>
-                    <li><a href="cart.xhtml">
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.xhtml">Home</a></li>
+                        <li><a href="business.xhtml">Business</a></li>
+                        <li class="active"><a href="store.xhtml">Store</a></li>
+                        <li><a href="blog.xhtml">Blog</a></li>
+                        <li><a href="cart.xhtml">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         
-        <header class="store-header"></header>
+        <header class="store-header">
+                <div class="store-info">
+                    <h2>Only For Cool Kids</h2>
+                    <p>bleh bleh bleh bleh bleh bleh</p>
+                </div>
+        </header>
         
         <div class="content">
-            <div class="container product-grid">
-                <div class="row">
-                    <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">HTML</a></li>
-                      <li><a href="#">CSS</a></li>
-                      <li><a href="#">JavaScript</a></li>
-                    </ul>
-                  </div>
+            
+            <div class="row sec-one">
+	    	<div class="col-sm-12 home-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+	    	</div>
+            </div>
+            
+            <div class="container">
+                <div class="well well-sm">
+                    <strong>Filter by: </strong>
+                    <div class="btn-group">
+                        <a href="#" id="list" class="btn btn-default btn-sm">Lowest to Highest</a> 
+                        
+                        <a href="#" id="grid" class="btn btn-default btn-sm">Highest to Lowest</a>
+                            
+                        <a href="#" id="grid" class="btn btn-default btn-sm">Popular</a>
+                            
+                        <a href="#" id="grid" class="btn btn-default btn-sm">And other stuff blah blah</a>
+                    </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                <div id="products" class="row list-group">
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Bowman-Chuck-Connors-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Joe-Jackson-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Topps-Eddie-Gaedel-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Topps-Stan-Musial-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Ichiro-Suzuki-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Topps-Hank-Aaron-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Topps-Stan-Musial-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Ichiro-Suzuki-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-6">
-                        <img class="img-responsive" src="img/card-template.jpg"/>
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+                            <img class="group list-group-image" src="img/Topps-Hank-Aaron-thumb.jpg" alt="" />
+                            <div class="caption">
+                                <h4 class="group inner list-group-item-heading center">
+                                    Product title</h4>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-8">
+                                        <p class="lead">
+                                            $21.000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
+            <center>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </center>
+            
 	</div>
+        
         <footer>
-            <div id="footer-nav">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3> Want to work for us </h3>
-            		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			<button type="button" class="btn btn-primary">Primary</button>
-			<button type="button" class="btn btn-info">Info</button>
-                    </div>
-                    <div class="col-sm-3">
-                    </div>
-                    <div class="col-sm-2">
-                    <h4> LINKS </h4>
-			<ul id="footer-links">
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-			</ul>
-                    </div>
-                    <div class="col-sm-3">
-			<h4> CONTACT </h4>
-                    </div>
-		</div>
-            </div>
-            <hr/>
-            <p>Copyright © 2016 Niantic, Inc. All Rights Reserved.</p>
+            <p>Copyright © 2017 Cards That Never Were, All Rights Reserved.</p>
 	</footer>
         
     </h:body>
