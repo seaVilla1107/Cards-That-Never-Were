@@ -13,8 +13,8 @@
     <h:body>
         
         <div id="contact">
-            <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <span class="glyphicon glyphicon-user"></span><h:link value="Sign Up" outcome="login" />
+            <span class="glyphicon glyphicon-log-in"></span><h:link value="Login" outcome="login" />
         </div>
         
         <nav class="navbar navbar-default">
@@ -24,21 +24,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span> 
-                      </button>
-                    <a class="navbar-brand" href="index.xhtml">
+                    </button>
+                    <h:link class="navbar-brand" outcome="index" >
                         <img class="img-responsive logo" src="img/logo_1.png"/>
-                    </a>
+                    </h:link>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.xhtml">Home</a></li>
-                        <li class="active"><a href="business.xhtml">Business</a></li>
-                        <li><a href="store.xhtml">Store</a></li>
-                        <li><a href="blog.xhtml">Blog</a></li>
-                        <li><a href="cart.xhtml">
-                            <span class="glyphicon glyphicon-shopping-cart"></span>
-                            </a>
-                        </li>
+                        <li><h:link value="Home" outcome="index" /></li>
+                        <li class="active"><h:link value="Business" outcome="business" /></li>
+                        <li><h:link value="Store" outcome="store" /></li>
+                        <li><h:link value="Blog" outcome="blog" /></li>
+                        <li><h:link value="Cart" outcome="cart" /></li>
                     </ul>
                 </div>
             </div>
